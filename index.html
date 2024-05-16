@@ -4,39 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <title>Find out your fortune 😇</title>
   </head>
   <body>
-    <main>
-      <header>
-        Tell me your favourite color and find out what future awaits
-      </header>
-      <form>
-        <input type="text" name="" id="codeword" />
-        <input type="submit" value="submit" />
-      </form>
-      <div class="fortune">
-        Your secret desire to completely change your life will manifest.
-      </div>
-    </main>
+    <div class="container">
+      <h1>
+        Tell me your favourite colour and find out what your future awaits...
+      </h1>
+      <main>
+        <form>
+          <input
+            type="text"
+            name=""
+            id="codeword"
+            class="codeword"
+            placeholder="Enter your favourite colour..."
+            autofocus
+            required
+          />
+          <input type="submit" value="Let's find out" class="button" />
+        </form>
+        <div class="fortune">
+          Your secret desire to completely change your life will manifest.
+        </div>
+      </main>
 
-    <footer>
-      <small>
-        With 💛 by
-        <a href="https://github.com/igaraeva" target="_blank">
-          <strong>Indira Garaeva</strong>
-        </a>
+      <footer>
+        <small>
+          With 💛 by
+          <a href="https://github.com/igaraeva" target="_blank">
+            <strong>Indira Garaeva</strong>
+          </a>
 
-        <br />
-        <a href="https://github.com/igaraeva/fortune-teller" target="_blank">
-          Open-sourced on GitHub
-        </a>
-        <br />
-        <a href="https://findyourfortune.netlify.app/" target="_blank">
-          Hosted on Netlify
-        </a>
-      </small>
-    </footer>
+          <br />
+          <a href="https://github.com/igaraeva/fortune-teller" target="_blank">
+            Open-sourced on GitHub
+          </a>
+          <br />
+          <a href="https://findyourfortune.netlify.app/" target="_blank">
+            Hosted on Netlify
+          </a>
+        </small>
+      </footer>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>

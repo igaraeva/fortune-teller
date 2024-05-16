@@ -1,0 +1,67 @@
+body {
+  background-image: url("dice.jpg");
+  background-size: cover;
+  font-family: Indie flower, sans-serif;
+  color: #121315;
+}
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+form {
+  background-color: #e4f1fe;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+}
+
+.codeword {
+  width: 65%;
+  padding: 16px;
+  font-family: Indie flower, sans-serif;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  border-radius: 30px;
+  background-color: #ebebeb;
+  color: #121315;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.button {
+  width: 25%;
+  border-radius: 30px;
+  border: none;
+  color: #ebebeb;
+  background-color: #2f3c4f;
+  font-size: 16px;
+  font-family: Indie flower, sans-serif;
+  padding: 16px 20px;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+.fortune {
+  background-color: #e4f1fe;
+  border-radius: 4px;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 3px solid #2f3c4f;
+}
+
+footer {
+  margin-top: 30px;
+  font-weight: 900;
+  text-align: left;
+}
+
+a {
+  color: #121315;
+}
