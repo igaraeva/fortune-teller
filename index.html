@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <title>Find out your fortune 😇</title>
   </head>
   <body>
@@ -19,7 +22,7 @@
         Tell me your favourite colour and find out what your future awaits...
       </h1>
       <main>
-        <form>
+        <form id="fortune-generator">
           <input
             type="text"
             name=""
@@ -31,9 +34,7 @@
           />
           <input type="submit" value="Find out" class="button" />
         </form>
-        <div class="fortune">
-          Your secret desire to completely change your life will manifest.
-        </div>
+        <div class="fortune" id="fortune"></div>
       </main>
 
       <footer>
