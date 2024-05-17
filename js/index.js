@@ -1,12 +1,23 @@
-function generateFortune(event) {
-  event.preventDefault();
-
+function showFortune(response) {
   new Typewriter("#fortune", {
-    strings: "Your secret desire to completely change your life will manifest.",
+    strings: response.data.answer,
     autoStart: true,
     delay: 50,
     cursor: null,
   });
+}
+
+function generateFortune(event) {
+  event.preventDefault();
+
+  let dateOfBirth = document.querySelector("#date-of-birth");
+  let prompt = `Generate a personal future prediction based on a person's date of birth: ${dateOfBirth.value}. The prediction should be short, one sentence long with NO headings or subheadings. You should avoid stating the current year and write the prediction in a format of a chinese fortune cookie.`;
+  let context =
+    "You are an AI assistant who loves astrology, numerology and zodiac signs. You can give future predictions based on a person's date of birth";
+  let apiKey = "51f9883450a0f1682ta31o8477291fb1";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  axios.get(apiUrl).then(showFortune);
 }
 
 let fortuneGeneratorElement = document.querySelector("#fortune-generator");
